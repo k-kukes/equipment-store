@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Lists</title>
+</head>
+<body>
+    <!-- 1st nav bar -->
+    <nav>
+        <a href="home.html">LOGO</a>
+        <a href="">SIGN IN</a>
+        <a href="shopping-cart.html">CART</a>
+    </nav>
+    <br>
+    <!-- search bar feature -->
+    <label for="search-bar">Search Bar</label>
+    <input id="search-bar" type="search">
+    <input type="button" id="search-bar-button">
+    <br>
+    <br>
+    <!-- 2nd nav bar  -->
+    <nav>
+        <a href="home.html">HOME</a>
+        <a href="">Contact Us</a>
+        <a href="product-listing.html">Products</a>
+        <a href="">API</a>
+    </nav>
+    <br>
+    <h3>Filter</h3>
+    <div class="product-filter">
+        <div id="price-range-filter">
+            Price
+            <br>
+            $
+            <input type="number" id="minPriceRangeNum">
+            to
+            <input type="number" id="maxPriceRangeNum">
+        </div>
+        <br>
+        <div id="brand-filter">
+            Brand
+            <br>
+            <input type="checkbox" name="" id="brandNikeChk">
+            <label for="brandNikeChk">Nike</label>
+        </div>
+        <!-- <div id="item-filter">Item</div>
+        <div id="gender-filter">Gender</div> -->
+        <!-- more filters -->
+    </div>
+    <br>
+    Results for (Searched Item)
+    <div class="product-listing-container">
+        <img src="" alt="Item 1 999.99$">
+    </div>
+    <input type="button" id="previousPageBtn" value="Previous Page">
+    <input type="button" id="nextPageBtn" value="Next Page">
+</body>
+<footer>
+    Kukes & Fahad &copy;
+    <a href="home.html">Home</a>
+    <a href="">Contact Us</a>
+    <a href="product-listing.html">Products</a>
+    <a href="">API</a>
+</footer>
+</html>
