@@ -4,28 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Lists</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- 1st nav bar -->
-    <nav>
-        <a href="home.html">LOGO</a>
-        <a href="">SIGN IN</a>
-        <a href="shopping-cart.html">CART</a>
-    </nav>
-    <br>
-    <!-- search bar feature -->
-    <label for="search-bar">Search Bar</label>
-    <input id="search-bar" type="search">
-    <input type="button" id="search-bar-button">
-    <br>
-    <br>
-    <!-- 2nd nav bar  -->
-    <nav>
-        <a href="home.html">HOME</a>
-        <a href="">Contact Us</a>
-        <a href="product-listing.html">Products</a>
-        <a href="">API</a>
-    </nav>
+    <div id="headerContainer">
+        <!-- First header  -->
+        <div id ="topHeader">
+            <a href="home.html">⚽</a>
+            <a href="" id="signInNav">Sign In</a>
+            <a href="shopping-cart.html">Cart 🛒</a>
+        </div>
+        <h1 id="pageTitle">Kuhad Foot's Equipments</h1>
+        <!-- search bar feature -->
+        <div id="searchBarContainer">
+            <label for="search-bar"></label>
+            <input id="search-bar" type="search" placeholder="Search bar">
+            <input type="button" id="search-bar-button" value="🔍">
+        </div>
+        <!-- 2nd nav bar -->
+        <br>
+        <nav id="bottomHeader">
+            <a href="home.html">HOME</a>
+            <a href="">Contact Us</a>
+            <a href="product-listing.html">Products</a>
+            <a href="">API</a>
+            <!--  ASK Whether we need API page  -->
+        </nav>
+    </div>
     <br>
     <h3>Filter</h3>
     <div class="product-filter">
