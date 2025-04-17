@@ -1,0 +1,33 @@
+{
+    "categories" : [
+        {
+            "categoryId" : "C1",
+            "categoryName" : "Cleats",
+            "description" : "Soccer Shoes"            
+        }
+    ],
+    "products" : [
+        {
+            "itemId" : "I1",
+            "categoryId" : "C1",
+            "itemTitle" : "Nike Phantom GT2 Club MG 'Shadow Pack'",
+            "itemDescription" : "desc",
+            "brand" : "",
+            "unitPrice" : "",
+            "quantity" : "",
+            "make" : "",
+            "image" : ""
+        },
+        {
+            "itemId" : "I2",
+            "categoryId" : "C1",
+            "itemTitle" : "Adidas",
+            "itemDescription" : "desc",
+            "brand" : "",
+            "unitPrice" : "",
+            "quantity" : "",
+            "make" : "",
+            "image" : ""
+        }
+    ]
+}
