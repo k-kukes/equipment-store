@@ -17,7 +17,7 @@ function loadProducts(products){
 
         const div = document.createElement('div');
         div.className = "card"
-        div.style = "width: 17rem; height: 20rem"
+        div.style = "width: 17rem; height: 25rem"
         productContainer.appendChild(div);
 
         createNewProduct(div, 'img', product.image, "card-img-top");
@@ -34,9 +34,14 @@ function loadProducts(products){
 
 function createNewProduct(parent, elemName, content, elemClass){
     const newElem = document.createElement(elemName);
-    newElem.textContent = content;
     newElem.className = elemClass;
+    newElem.textContent = content;
     parent.appendChild(newElem);
+
+    if (elemName === 'img'){
+        newElem.src = content;
+        newElem.style.height = "9rem";
+    }
 
     if (elemName === 'div') {
         cardBodyDiv = newElem;

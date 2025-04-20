@@ -4,6 +4,16 @@
             "categoryId" : "C1",
             "categoryName" : "Cleats",
             "description" : "Soccer Shoes"            
+        },
+        {
+            "categoryId" : "C2",
+            "categoryName": "Jerseys",
+            "description" : "Club and international teams jerseys"
+        },
+        {
+            "categoryId" : "C3",
+            "categoryName" : "Nets",
+            "description" : "Goal nets of all sizes"
         }
     ],
     "products" : [
@@ -11,23 +21,67 @@
             "itemId" : "I1",
             "categoryId" : "C1",
             "itemTitle" : "Nike Phantom GT2 Club MG 'Shadow Pack'",
-            "itemDescription" : "desc",
-            "brand" : "",
-            "unitPrice" : "",
-            "quantity" : "",
-            "make" : "",
-            "image" : ""
+            "itemDescription" : "Great quality for amateur footballers. Color Black.",
+            "brand" : "Nike",
+            "unitPrice" : "$114.95",
+            "quantity" : "43",
+            "make" : "Nike Company",
+            "image" : "images/NikeCleats.jpg"
         },
         {
             "itemId" : "I2",
             "categoryId" : "C1",
-            "itemTitle" : "Adidas",
-            "itemDescription" : "desc",
-            "brand" : "",
-            "unitPrice" : "",
-            "quantity" : "",
-            "make" : "",
-            "image" : ""
+            "itemTitle" : "Copa Pure 3 Elite Firm Ground Cleats",
+            "itemDescription" : "Quality cleats for young footballers. Color White",
+            "brand" : "Adidas",
+            "unitPrice" : "$340.47",
+            "quantity" : "24",
+            "make" : "Adidas Company",
+            "image" : "images/AdidasCleats.jpg"
+        },
+        {
+            "itemId" : "I3",
+            "categoryId" : "C2",
+            "itemTitle" : "Real Madrid 2017-2018 Third Kit",
+            "itemDescription" : "Real Madrid's third kit of the 2017-18 season",
+            "brand" : "Adidas",
+            "unitPrice" : "$42.34",
+            "quantity" : "57",
+            "make" : "Adidas Company",
+            "image" : "images/RealMadridJersey.jpg"
+        },
+        {
+            "itemId" : "I4",
+            "categoryId" : "C2",
+            "itemTitle" : "FC Barcelona 2018-2019 Home Kit",
+            "itemDescription" : "Barcelona's Home Kit for the 2018-19 season",
+            "brand" : "Nike",
+            "unitPrice" : "$30.17",
+            "quantity" : "78",
+            "make" : "Nike Company",
+            "image" : "images/BarcelonaJersey.jpg"
+        },
+        {
+            "itemId" : "I5",
+            "categoryId" : "C3",
+            "itemTitle" : "Pro World Cup Goal Net",
+            "itemDescription" : "Net for professional level",
+            "brand" : "Kuhad",
+            "unitPrice" : "$102.87",
+            "quantity" : "20",
+            "make" : "Kuhad Factory",
+            "image" : "images/ProNet.jpg"
+        },
+        {
+            "itemId" : "I6",
+            "categoryId" : "C3",
+            "itemTitle" : "Small Net for Kids",
+            "itemDescription" : "Net for backyard for kids to play",
+            "brand" : "Colaxi",
+            "unitPrice" : "$45.67",
+            "quantity" : "54",
+            "make" : "Walmart",
+            "image" : "images/KidsNet.jpg"
         }
     ]
 }
