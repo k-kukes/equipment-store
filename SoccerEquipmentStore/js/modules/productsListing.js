@@ -1,11 +1,15 @@
+import { fetchData } from "./fetchWrapper.js";
+
 var cardBodyDiv;
 
-export function initProductListing(){
+export async function initProductListing(){
     console.log("Product Listing Initialized");
-    
+    const uri = "data/catalog.json"
+    const products = await fetchData(uri);
+    loadProducts(products);
 }
 
-export function loadProducts(products){
+function loadProducts(products){
     const productContainer = document.getElementById("product-card");
     
     products.products.forEach(product => {
@@ -20,6 +24,7 @@ export function loadProducts(products){
         createNewProduct(div, 'div', null, "card-body");
         createNewProduct(cardBodyDiv, 'h5', product.itemTitle, "card-title")
         createNewProduct(cardBodyDiv, 'p', product.itemDescription, "card-text")
+        createNewProduct(cardBodyDiv, 'p', product.unitPrice, "card-text")
 
         div.addEventListener("click", () => {
             sessionStorage.setItem(product.itemId,product);
