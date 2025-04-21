@@ -1,5 +1,5 @@
-import { fetchData } from "./modules/fetchWrapper.js";
 import { initProductListing } from "./modules/productsListing.js";
+import { initLeagues } from "./modules/premierLeague.js";
 
 document.addEventListener('DOMContentLoaded', initApp)
 
@@ -9,5 +9,8 @@ async function initApp(){
     const page = document.querySelector("[data-page]").dataset.page;
     if (page === "productListing") {
         initProductListing();
+    }
+    if (page === "premierLeague") {
+        initLeagues();
     }
 }
