@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | [Your Site Name]</title>
+  <link rel="stylesheet" href="CSS/Styles.css">
+</head>
+
+<body>
+  <header>
+    <h1><a href="home.html"> Kuhad's Equipment Store </a></h1>
+
+    <!-- Simple navigation -->
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="lists.html">Lists</a></li>
+        <li><a href="tables.html">Tables</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <header>
+        <h2>Get in Touch</h2>
+        <p>Have a question about our soccer equipment or just want to say hi? Fill out the form below and we’ll get back to you as soon as possible.</p>
+      </header>
+
+      <!-- Contact form -->
+      <section>
+        <form id="contactForm" action="https://example.com/send" method="post">
+          <fieldset>
+            <legend>Tell us about yourself</legend>
+
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" required placeholder="Jane Doe">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required placeholder="jane@example.com">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your message</legend>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" maxlength="60">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <button type="submit">Send Message</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p> Kukes & Fahad &copy;</p>
+  </footer>
+</body>
+</html>
