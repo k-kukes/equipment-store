@@ -33,41 +33,34 @@
         </nav>
     </div>
     <br>
-    <h3>Filter</h3>
-    <div class="product-filter">
-        <div id="price-range-filter">
-            Price
+    <div class="container-lg">
+        <h3>Filter</h3>
+        <div class="product-filter">
+            <div id="price-range-filter">
+                Price
+                <br>
+                $
+                <input type="number" id="minPriceRangeNum">
+                to
+                <input type="number" id="maxPriceRangeNum">
+            </div>
             <br>
-            $
-            <input type="number" id="minPriceRangeNum">
-            to
-            <input type="number" id="maxPriceRangeNum">
+            <div id="brand-filter">
+                Brand
+                <br>
+                <input type="checkbox" name="" id="brandNikeChk">
+                <label for="brandNikeChk">Nike</label>
+            </div>
+            <!-- <div id="item-filter">Item</div>
+            <div id="gender-filter">Gender</div> -->
+            <!-- more filters -->
         </div>
         <br>
-        <div id="brand-filter">
-            Brand
-            <br>
-            <input type="checkbox" name="" id="brandNikeChk">
-            <label for="brandNikeChk">Nike</label>
-        </div>
-        <!-- <div id="item-filter">Item</div>
-        <div id="gender-filter">Gender</div> -->
-        <!-- more filters -->
+        Results for (Searched Item)
+        <div id="product-card"></div>
+        <input type="button" id="previousPageBtn" value="Previous Page">
+        <input type="button" id="nextPageBtn" value="Next Page">
     </div>
-    <br>
-    Results for (Searched Item)
-    <div id="product-card">
-        <div class="card" style="width: 17rem; height: 20rem;">
-        <img src="" alt="" class="card-img-top">
-        <div class="card-body">
-            <h5 class="card-title">Product</h5>
-            <p class="card-text">Card text</p>
-        </div>
-        </div>
-    </div>
-
-    <input type="button" id="previousPageBtn" value="Previous Page">
-    <input type="button" id="nextPageBtn" value="Next Page">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <script src="js/app.js" type="module" defer></script>
 </body>
