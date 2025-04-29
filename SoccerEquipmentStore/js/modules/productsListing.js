@@ -27,7 +27,7 @@ function loadProducts(products){
         createNewProduct(cardBodyDiv, 'p', product.unitPrice, "card-text")
 
         div.addEventListener("click", () => {
-            sessionStorage.setItem(product.itemId,product);
+            localStorage.setItem(product.itemId,product);
         })
     });
 }
