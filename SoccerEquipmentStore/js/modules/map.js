@@ -24,26 +24,11 @@ export async function initLeafletMap() {
 function renderLocations(map, locations){
     // 3) Loop over the locations.places array, and for each place, create a marker object and add it to the map.
    // The marker needs to be populated with its corresponding place info: the address, the name, the description
-    var iconImage;
     locations.places.forEach(place => {
-        switch (place.categoryId) {
-            case 1:
-                iconImage = locations.categories[0].markerIcon;
-                break;
-        
-            case 2:
-                iconImage = locations.categories[1].markerIcon;
-                break;
-
-            case 3:
-                iconImage = locations.categories[2].markerIcon;
-                break;
-            default:
-                break;
-        }
+        const category = locations.categories.find(category => category.id === place.categoryId);
 
         var myIcon = L.icon({
-            iconUrl: iconImage,
+            iconUrl: category.markerIcon,
             iconSize : [40,50],
             iconAnchor : [22,94],
             popupAnchor : [-3, -76]
