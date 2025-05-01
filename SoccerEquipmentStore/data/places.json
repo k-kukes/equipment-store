@@ -1,0 +1,87 @@
+{
+    "categories":[
+        {
+            "id": 1,
+            "name": "Soccer Fields",
+            "description": "Fields where you can play Football",
+            "markerIcon": "assets/markers/soccerfield.png"
+        },
+        {
+            "id": 2,
+            "name": "Gyms",
+            "description": "Fitness Gyms for anyone",
+            "markerIcon": "assets/markers/gym.png"
+        },
+        {
+            "id": 3,
+            "name": "Soccer Stores",
+            "description": "Football equipment stores",
+            "markerIcon": "assets/markers/soccer.png"
+        }
+    ],
+    "places": [
+        {
+            "name": "Hartenstein Park soccer field",
+            "description" : "A soccer field",
+            "address": "1505 Cardinal St, Montreal, Quebec H4L 3G3",
+            "point": {
+                "coordinates": "45.52143963844733,-73.69168736978523"
+            },
+            "categoryId": 1
+        },
+        {
+            "name": "Painter Park soccer field",
+            "description" : "A soccer field",
+            "address": "Montreal, Quebec H4N 1V7",
+            "point": {
+                "coordinates": "45.531981168368475,-73.67620468874813"
+            },
+            "categoryId": 1
+        },
+        {
+            "name": "Park Jarry soccer fields",
+            "description" : "A soccer field",
+            "address": "Montreal, Quebec H2R 2W1",
+            "point": {
+                "coordinates": "45.537091590454594,-73.6300706936539"
+            },
+            "categoryId": 1
+        },
+        {
+            "name": "Buzzfit - DDO",
+            "description" : "A Fitness Gym",
+            "address": "3796 Sources Blvd 2nd Floor, Dollard-Des Ormeaux, Quebec H9B 3J2",
+            "point": {
+                "coordinates": "45.48942639832556,-73.80328262960245"
+            },
+            "categoryId": 2
+        },
+        {
+            "name": "Monster Gym",
+            "description" : "A Fitness Gym",
+            "address": "2101 Trans Canada Route, Dorval, Quebec H9P 1J1",
+            "point": {
+                "coordinates": "45.4846055046458,-73.78673845488866"
+            },
+            "categoryId": 2
+        },
+        {
+            "name": "Premium Soccer",
+            "description" : "Football sporting goods store",
+            "address": "7135 Trans Canada Route, Saint-Laurent, Quebec H4T 1A2",
+            "point": {
+                "coordinates": "45.4965683347411,-73.70525412098786"
+            },
+            "categoryId": 3
+        },
+        {
+            "name": "Soccer Experts",
+            "description" : "Football sporting goods store",
+            "address" : "2750 Saint-Charles Blvd, Kirkland, Quebec H9H 3B6",
+            "point": {
+                "coordinates": "45.448715130285876,-73.85218616184385"
+            },
+            "categoryId": 3
+        }
+    ]
+}

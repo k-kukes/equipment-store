@@ -1,5 +1,6 @@
 import { initProductListing } from "./modules/productsListing.js";
 import { initLeagues } from "./modules/premierLeague.js";
+import { initLeafletMap } from "./modules/map.js";
 
 document.addEventListener('DOMContentLoaded', initApp)
 
@@ -12,5 +13,8 @@ async function initApp(){
     }
     if (page === "premierLeague") {
         initLeagues();
+    }
+    if (page === "map") {
+        initLeafletMap();
     }
 }
