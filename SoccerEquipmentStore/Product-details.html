@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Details | Equipment Store</title>
-  <link rel="stylesheet" href="CSS/Styles.css"> <!-- update path if needed -->
+  <link rel="stylesheet" href="CSS/Styles.css">
 </head>
 <body>
 
@@ -22,37 +22,41 @@
   <main>
     <article>
       <section>
-        <h2>Adjustable Dumbbell Set</h2>
-    <!-- add images here of what we want related to equipment-->
-        <p><strong>Price:</strong> $129.99</p>
-        <p><strong>Category:</strong> Strength Training</p>
-        <p><strong>Availability:</strong> In Stock</p>
+        <h2 id="productTitle">Loading...</h2>
+        <img id="productImage" src="" alt="Product Image" width="300">
+        <p><strong>Price:</strong> <span id="productPrice"></span></p>
+        <p><strong>Category:</strong> <span id="productCategory"></span></p>
+        <p><strong>Availability:</strong> <span id="productAvailability"></span></p>
       </section>
 
       <section>
         <h3>Description</h3>
-        <p>Good soccer equipment is very important if you want to win</p>
+        <p id="productDescription"></p>
       </section>
 
       <section>
         <h3>Product Features</h3>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <ul id="productFeatures">
+        
         </ul>
       </section>
 
-      <section> <!-- if we wanna add customer reviews-->
+      <section>
         <h3>Customer Reviews</h3>
-       
+        <p>No reviews yet.</p>
       </section>
     </article>
   </main>
-  <script src="js/app.js" type="module" defer></script>
-</body>
+
   <footer>
     <p>Kukes & Fahad &copy; 2025</p>
   </footer>
+
+  <!-- Attaching JS to load product details -->
+  <script type="module">
+    import { initProductDetails } from './js/modules/productDetails.js';
+    initProductDetails();
+  </script>
+
+</body>
 </html>
