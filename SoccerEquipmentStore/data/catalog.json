@@ -1,157 +1,20 @@
 {
-    "categories" : [
-        {
-            "categoryId" : "C1",
-            "categoryName" : "Cleats",
-            "description" : "Soccer Shoes"            
-        },
-        {
-            "categoryId" : "C2",
-            "categoryName": "Jerseys",
-            "description" : "Club and international teams jerseys"
-        },
-        {
-            "categoryId" : "C3",
-            "categoryName" : "Nets",
-            "description" : "Goal nets of all sizes"
-        }
-    ],
-    "products" : [
-        {
-            "itemId" : "I1",
-            "categoryId" : "C1",
-            "itemTitle" : "Nike Phantom GT2 Club MG 'Shadow Pack'",
-            "itemDescription" : "Great quality for amateur footballers. Color Black.",
-            "brand" : "Nike",
-            "unitPrice" : "$114.95",
-            "quantity" : "43",
-            "make" : "Nike Company",
-            "image" : "images/NikeCleats.jpg"
-        },
-        {
-            "itemId" : "I2",
-            "categoryId" : "C1",
-            "itemTitle" : "Copa Pure 3 Elite Firm Ground Cleats",
-            "itemDescription" : "Quality cleats for young footballers. Color White",
-            "brand" : "Adidas",
-            "unitPrice" : "$340.47",
-            "quantity" : "24",
-            "make" : "Adidas Company",
-            "image" : "images/AdidasCleats.jpg"
-        },
-        {
-            "itemId" : "I3",
-            "categoryId" : "C1",
-            "itemTitle" : "Ultra 5 Play",
-            "itemDescription" : "Quality cleats for young footballers. Color White",
-            "brand" : "Puma",
-            "unitPrice" : "$90.00",
-            "quantity" : "15",
-            "make" : "Puma Company",
-            "image" : "images/pumaCleats.png"
-        },
-        {
-            "itemId" : "I4",
-            "categoryId" : "C1",
-            "itemTitle" : "Nike Phantom Luna 2 Elite",
-            "itemDescription" : "Quality cleats for young footballers. Color Pink",
-            "brand" : "Nike",
-            "unitPrice" : "$375.00",
-            "quantity" : "34",
-            "make" : "Nike Company",
-            "image" : "images/nikeCleats2.jpg"
-        },
-        {
-            "itemId" : "I5",
-            "categoryId" : "C2",
-            "itemTitle" : "Real Madrid 2017-2018 Third Kit",
-            "itemDescription" : "Real Madrid's third kit of the 2017-18 season",
-            "brand" : "Adidas",
-            "unitPrice" : "$42.34",
-            "quantity" : "57",
-            "make" : "Adidas Company",
-            "image" : "images/RealMadridJersey.jpg"
-        },
-        {
-            "itemId" : "I6",
-            "categoryId" : "C2",
-            "itemTitle" : "FC Barcelona 2018-2019 Home Kit",
-            "itemDescription" : "Barcelona's Home Kit for the 2018-19 season",
-            "brand" : "Nike",
-            "unitPrice" : "$30.17",
-            "quantity" : "78",
-            "make" : "Nike Company",
-            "image" : "images/BarcelonaJersey.jpg"
-        },
-        {
-            "itemId" : "I7",
-            "categoryId" : "C2",
-            "itemTitle" : "Cristiano Ronaldo Portugal 2025 Home Jersey",
-            "itemDescription" : "Ronaldo's 2025 Portugal Home Jersey",
-            "brand" : "Puma",
-            "unitPrice" : "$129.99",
-            "quantity" : "15",
-            "make" : "Puma Company",
-            "image" : "images/ronaldoJersey.jpg"
-        },
-        {
-            "itemId" : "I8",
-            "categoryId" : "C2",
-            "itemTitle" : "Lionel Messi Argentina 24/25 Home Jersey",
-            "itemDescription" : "Lionel Messi's 2025 Argentina Home Jersey",
-            "brand" : "Adidas",
-            "unitPrice" : "$129.99",
-            "quantity" : "54",
-            "make" : "Adidas Company",
-            "image" : "images/messiJersey.jpg"
-        },
-        {
-            "itemId" : "I9",
-            "categoryId" : "C3",
-            "itemTitle" : "Pro World Cup Goal Net",
-            "itemDescription" : "Net for professional level",
-            "brand" : "Kuhad",
-            "unitPrice" : "$102.87",
-            "quantity" : "20",
-            "make" : "Kuhad Factory",
-            "image" : "images/ProNet.jpg"
-        },
-        {
-            "itemId" : "I10",
-            "categoryId" : "C3",
-            "itemTitle" : "Small Net for Kids",
-            "itemDescription" : "Net for backyard for kids to play",
-            "brand" : "Colaxi",
-            "unitPrice" : "$45.67",
-            "quantity" : "54",
-            "make" : "Walmart",
-            "image" : "images/KidsNet.jpg"
-        },
-        {
-            "itemId" : "I11",
-            "categoryId" : "C3",
-            "itemTitle" : "Portable Net for Kids",
-            "itemDescription" : "Portable yellow net for kids",
-            "brand" : "SKLZ",
-            "unitPrice" : "$45.23",
-            "quantity" : "23",
-            "make" : "Walmart",
-            "image" : "images/yellowNet.jpg"
-        },
-        {
-            "itemId" : "I12",
-            "categoryId" : "C3",
-            "itemTitle" : "School Net",
-            "itemDescription" : "Net for academic purposes",
-            "brand" : "Aoneky",
-            "unitPrice" : "$102.87",
-            "quantity" : "15",
-            "make" : "Amazon Warehouse",
-            "image" : "images/schoolNet.jpg"
-        },
-
-{
   "categories": [
+    {
+      "categoryId": "C1",
+      "categoryName": "Cleats",
+      "description": "Soccer Shoes"
+    },
+    {
+      "categoryId": "C2",
+      "categoryName": "Jerseys",
+      "description": "Club and international teams jerseys"
+    },
+    {
+      "categoryId": "C3",
+      "categoryName": "Nets",
+      "description": "Goal nets of all sizes"
+    },
     {
       "categoryId": "C4",
       "categoryName": "Footballs",
@@ -164,6 +27,138 @@
     }
   ],
   "products": [
+    {
+      "itemId": "I1",
+      "categoryId": "C1",
+      "itemTitle": "Nike Phantom GT2 Club MG 'Shadow Pack'",
+      "itemDescription": "Great quality for amateur footballers. Color Black.",
+      "brand": "Nike",
+      "unitPrice": "$114.95",
+      "quantity": "43",
+      "make": "Nike Company",
+      "image": "images/NikeCleats.jpg"
+    },
+    {
+      "itemId": "I2",
+      "categoryId": "C1",
+      "itemTitle": "Copa Pure 3 Elite Firm Ground Cleats",
+      "itemDescription": "Quality cleats for young footballers. Color White",
+      "brand": "Adidas",
+      "unitPrice": "$340.47",
+      "quantity": "24",
+      "make": "Adidas Company",
+      "image": "images/AdidasCleats.jpg"
+    },
+    {
+      "itemId": "I3",
+      "categoryId": "C1",
+      "itemTitle": "Ultra 5 Play",
+      "itemDescription": "Quality cleats for young footballers. Color White",
+      "brand": "Puma",
+      "unitPrice": "$90.00",
+      "quantity": "15",
+      "make": "Puma Company",
+      "image": "images/pumaCleats.png"
+    },
+    {
+      "itemId": "I4",
+      "categoryId": "C1",
+      "itemTitle": "Nike Phantom Luna 2 Elite",
+      "itemDescription": "Quality cleats for young footballers. Color Pink",
+      "brand": "Nike",
+      "unitPrice": "$375.00",
+      "quantity": "34",
+      "make": "Nike Company",
+      "image": "images/nikeCleats2.jpg"
+    },
+    {
+      "itemId": "I5",
+      "categoryId": "C2",
+      "itemTitle": "Real Madrid 2017-2018 Third Kit",
+      "itemDescription": "Real Madrid's third kit of the 2017-18 season",
+      "brand": "Adidas",
+      "unitPrice": "$42.34",
+      "quantity": "57",
+      "make": "Adidas Company",
+      "image": "images/RealMadridJersey.jpg"
+    },
+    {
+      "itemId": "I6",
+      "categoryId": "C2",
+      "itemTitle": "FC Barcelona 2018-2019 Home Kit",
+      "itemDescription": "Barcelona's Home Kit for the 2018-19 season",
+      "brand": "Nike",
+      "unitPrice": "$30.17",
+      "quantity": "78",
+      "make": "Nike Company",
+      "image": "images/BarcelonaJersey.jpg"
+    },
+    {
+      "itemId": "I7",
+      "categoryId": "C2",
+      "itemTitle": "Cristiano Ronaldo Portugal 2025 Home Jersey",
+      "itemDescription": "Ronaldo's 2025 Portugal Home Jersey",
+      "brand": "Puma",
+      "unitPrice": "$129.99",
+      "quantity": "15",
+      "make": "Puma Company",
+      "image": "images/ronaldoJersey.jpg"
+    },
+    {
+      "itemId": "I8",
+      "categoryId": "C2",
+      "itemTitle": "Lionel Messi Argentina 24/25 Home Jersey",
+      "itemDescription": "Lionel Messi's 2025 Argentina Home Jersey",
+      "brand": "Adidas",
+      "unitPrice": "$129.99",
+      "quantity": "54",
+      "make": "Adidas Company",
+      "image": "images/messiJersey.jpg"
+    },
+    {
+      "itemId": "I9",
+      "categoryId": "C3",
+      "itemTitle": "Pro World Cup Goal Net",
+      "itemDescription": "Net for professional level",
+      "brand": "Kuhad",
+      "unitPrice": "$102.87",
+      "quantity": "20",
+      "make": "Kuhad Factory",
+      "image": "images/ProNet.jpg"
+    },
+    {
+      "itemId": "I10",
+      "categoryId": "C3",
+      "itemTitle": "Small Net for Kids",
+      "itemDescription": "Net for backyard for kids to play",
+      "brand": "Colaxi",
+      "unitPrice": "$45.67",
+      "quantity": "54",
+      "make": "Walmart",
+      "image": "images/KidsNet.jpg"
+    },
+    {
+      "itemId": "I11",
+      "categoryId": "C3",
+      "itemTitle": "Portable Net for Kids",
+      "itemDescription": "Portable yellow net for kids",
+      "brand": "SKLZ",
+      "unitPrice": "$45.23",
+      "quantity": "23",
+      "make": "Walmart",
+      "image": "images/yellowNet.jpg"
+    },
+    {
+      "itemId": "I12",
+      "categoryId": "C3",
+      "itemTitle": "School Net",
+      "itemDescription": "Net for academic purposes",
+      "brand": "Aoneky",
+      "unitPrice": "$102.87",
+      "quantity": "15",
+      "make": "Amazon Warehouse",
+      "image": "images/schoolNet.jpg"
+    },
     {
       "itemId": "I13",
       "categoryId": "C4",
@@ -253,7 +248,4 @@
       "image": "images/gloves4.jpg"
     }
   ]
-}
- ]
-}
-
+}  
