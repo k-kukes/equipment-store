@@ -26,7 +26,7 @@ export async function initLeafletMap() {
     const mapSearchList = document.getElementById('locationSearchList');
     const listItems = mapSearchList.childNodes;
     listItems.forEach(mapItem => {
-        if (mapItem.textContent.includes(searchKeyword)) {
+        if (mapItem.textContent.toLowerCase().includes(searchKeyword.toLowerCase())) {
             mapItem.style.display = "block";
         } else {
             mapItem.style.display = "none";
@@ -54,16 +54,17 @@ function renderLocations(map, locations){
         <p> ${place.description}</p>
         <p> ${place.address}</p>
         `
-        L.marker(coord, {icon : myIcon}).addTo(map)
-        .bindPopup(placeInfo)
-        .openPopup();
+        var markerPopup = L.marker(coord, {icon : myIcon}).addTo(map)
+        .bindPopup(placeInfo);
 
-        var itemDisplay = document.createElement('li');
+        var itemDisplay = document.createElement('button');
         itemDisplay.textContent = place.name;
+        itemDisplay.className = "btn btn-light";
+        itemDisplay.style.width = '100%';
         
         itemDisplay.addEventListener('click', ()=> {
             map.setView(coord, 15);
-            marker.openPopup();
+            markerPopup.openPopup();
         })
 
         const mapSearchList = document.getElementById('locationSearchList');
