@@ -66,6 +66,15 @@
             "categoryId": 2
         },
         {
+            "name": "World Gym Dollard-des Ormeaux",
+            "description": "A Fitness Gym",
+            "address": "3237 des Sources boul, Montreal, Quebec H9B 1Z6",
+            "point": {
+                "coordinates": "45.48295122758076, -73.79385739057761"
+            },
+            "categoryId": 2
+        },
+        {
             "name": "Premium Soccer",
             "description" : "Football sporting goods store",
             "address": "7135 Trans Canada Route, Saint-Laurent, Quebec H4T 1A2",
@@ -80,6 +89,15 @@
             "address" : "2750 Saint-Charles Blvd, Kirkland, Quebec H9H 3B6",
             "point": {
                 "coordinates": "45.448715130285876,-73.85218616184385"
+            },
+            "categoryId": 3
+        },
+        {
+            "name": "Coin du Soccer",
+            "description": "Football sporting goods store",
+            "address": "5705C Bd Taschereau, Brossard, QC J4Z 1A6",
+            "point":{
+                "coordinates": "45.47966098237161, -73.46451606319295"
             },
             "categoryId": 3
         }
