@@ -16,8 +16,8 @@ function loadProducts(products){
         console.log(product);
 
         const div = document.createElement('div');
-        div.className = "card"
-        div.style = "width: 17rem; height: 25rem"
+        div.className = "card m-2"
+        div.style = "width: 12rem; height: 25rem"
         productContainer.appendChild(div);
 
         createNewProduct(div, 'img', product.image, "card-img-top");

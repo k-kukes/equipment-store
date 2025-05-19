@@ -39,5 +39,23 @@
 
 #product-card{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#product-listing-container{
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.product-filter{
+    width: 220px;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.filters{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
 }
