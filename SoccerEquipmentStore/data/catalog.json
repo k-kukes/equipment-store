@@ -148,6 +148,112 @@
             "quantity" : "15",
             "make" : "Amazon Warehouse",
             "image" : "images/schoolNet.jpg"
-        }
-    ]
+        },
+
+{
+  "categories": [
+    {
+      "categoryId": "C4",
+      "categoryName": "Footballs",
+      "description": "Different sized footballs for match or training use"
+    },
+    {
+      "categoryId": "C5",
+      "categoryName": "Gloves",
+      "description": "Goalkeeper gloves and training gloves"
+    }
+  ],
+  "products": [
+    {
+      "itemId": "I13",
+      "categoryId": "C4",
+      "itemTitle": "Adidas Al Rihla World Cup Ball",
+      "itemDescription": "Official FIFA World Cup 2022 match ball",
+      "brand": "Adidas",
+      "unitPrice": "$165.03",
+      "quantity": "12",
+      "make": "Adidas Company",
+      "image": "images/soccerball.jpg"
+    },
+    {
+      "itemId": "I14",
+      "categoryId": "C4",
+      "itemTitle": "Nike Flight Ball",
+      "itemDescription": "Nike's premium flight ball used in pro matches",
+      "brand": "Nike",
+      "unitPrice": "$161.89",
+      "quantity": "18",
+      "make": "Nike Company",
+      "image": "images/brazookaball.jpg"
+    },
+    {
+      "itemId": "I15",
+      "categoryId": "C4",
+      "itemTitle": "Puma Orbita LaLiga Ball",
+      "itemDescription": "Official match ball for La Liga",
+      "brand": "Puma",
+      "unitPrice": "$143.23",
+      "quantity": "10",
+      "make": "Puma Company",
+      "image": "images/soccerball3.jpg"
+    },
+    {
+      "itemId": "I16",
+      "categoryId": "C4",
+      "itemTitle": "Nike Academy Team Ball",
+      "itemDescription": "Durable ball ideal for training",
+      "brand": "Nike",
+      "unitPrice": "$64.59",
+      "quantity": "25",
+      "make": "Nike Company",
+      "image": "images/soccerball4.jpg"
+    },
+    {
+      "itemId": "I17",
+      "categoryId": "C5",
+      "itemTitle": "Nike Vapor Grip3 Gloves",
+      "itemDescription": "Pro goalkeeper gloves used by elite goalkeepers",
+      "brand": "Nike",
+      "unitPrice": "$101.67",
+      "quantity": "16",
+      "make": "Nike Company",
+      "image": "images/gloves1.jpg"
+    },
+    {
+      "itemId": "I18",
+      "categoryId": "C5",
+      "itemTitle": "Adidas Predator Pro Gloves",
+      "itemDescription": "Adidas' best grip gloves for goalkeepers",
+      "brand": "Adidas",
+      "unitPrice": "$105.99",
+      "quantity": "14",
+      "make": "Adidas Company",
+      "image": "images/gloves2.jpg"
+    },
+    {
+      "itemId": "I19",
+      "categoryId": "C5",
+      "itemTitle": "Puma Ultra Grip 1 Hybrid",
+      "itemDescription": "Soft grip and breathable fit for match",
+      "brand": "Puma",
+      "unitPrice": "$69.00",
+      "quantity": "20",
+      "make": "Puma Company",
+      "image": "images/gloves3.jpg"
+    },
+    {
+      "itemId": "I20",
+      "categoryId": "C5",
+      "itemTitle": "Basic Training Gloves",
+      "itemDescription": "Affordable training gloves for beginner players",
+      "brand": "SKLZ",
+      "unitPrice": "$19.99",
+      "quantity": "50",
+      "make": "Walmart",
+      "image": "images/gloves4.jpg"
+    }
+  ]
 }
+ ]
+}
+
