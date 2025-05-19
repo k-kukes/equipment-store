@@ -2,6 +2,7 @@ import { initProductListing } from "./modules/productsListing.js";
 import { initLeagues } from "./modules/premierLeague.js";
 import { initLeafletMap } from "./modules/map.js";
 import { initTeamStandings } from "./modules/teamStandings.js"; 
+import { initProductDetails } from "./modules/productDetails.js";
 
 document.addEventListener('DOMContentLoaded', initApp);
 
@@ -24,5 +25,9 @@ async function initApp() {
 
     if (page === "teamStandings") {
         initTeamStandings(); 
+    }
+
+    if (page === "productDetails") {
+        initProductDetails();
     }
 }
