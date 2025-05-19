@@ -123,7 +123,7 @@
             "description": "Football sporting goods store",
             "address": "5705C Bd Taschereau, Brossard, QC J4Z 1A6",
             "point":{
-                "coordinates": "45.47966098237161, -73.46451606319295"
+                "coordinates": "45.47965995179829, -73.46449996706852"
             },
             "categoryId": 3
         },
@@ -134,7 +134,7 @@
            "description": "Large-scale stadium used for pro soccer events",
            "address": "4545 Pierre-de-Coubertin Ave, Montreal, QC",
            "point": {
-           "coordinates": "45.5602,-73.5510"
+           "coordinates": "45.557754381368696, -73.55153854039415"
           },
            "categoryId": 4
 },
@@ -143,43 +143,46 @@
           "description": "Home stadium for CF Montréal",
           "address": "4750 Sherbrooke St E, Montreal, QC",
           "point": {
-          "coordinates": "45.5636,-73.5522"
+          "coordinates": "45.56308233873965, -73.55266018264244"
+  },
+          "categoryId": 4
+}, 
+
+
+         {
+          "name": "Stade de soccer de Montréal",
+          "description": "Soccer stadium with open field",
+          "address": "9235 Av. Papineau, Montreal, QC",
+          "point": {
+          "coordinates": "45.56289736248291, -73.63884935040852"
   },
           "categoryId": 4
 },
+
 {
-          "name": "West Island Soccer Park",
+          "name": "Lakeshore Soccer Club",
           "description": "Popular local soccer field and stadium",
-          "address": "100 Soccer Ave, DDO, QC",
+          "address": "20701 Sainte Marie Rd, Sainte-Anne-de-Bellevue, QC",
           "point": {
-          "coordinates": "45.4870,-73.8321"
-  },
-          "categoryId": 4
-},
-{
-          "name": "Downtown Soccer Academy",
-          "description": "Elite training for youth and adults",
-          "address": "300 Sport St, Montreal, QC",
-          "point": {
-          "coordinates": "45.5088,-73.5610"
+          "coordinates": "45.428402735297105, -73.92038811122613"
   },
           "categoryId": 5
 },
 {
-          "name": "Laval Elite Training Center",
-          "description": "Soccer development and training programs",
-          "address": "120 Training Rd, Laval, QC",
+          "name": "Soccer Laval",
+          "description": "Soccer development and training programs/club",
+          "address": "955 Av. de Bois-de-Boulogne Bureau 200, Laval, QC",
           "point": {
-          "coordinates": "45.5834,-73.7492"
+          "coordinates": "45.574148694136035, -73.70370261829254"
   },
           "categoryId": 5
 },
 {
-          "name": "South Shore Youth Academy",
+          "name": "Soccer iQ - Centre de performance",
           "description": "Youth soccer training and camps",
-          "address": "88 Kickoff Blvd, Longueuil, QC",
+          "address": "4980 Boulevard des Laurentides, Laval, QC",
           "point": {
-          "coordinates": "45.5295,-73.5162"
+          "coordinates": "45.61919205293367, -73.74484524243505"
   },
           "categoryId": 5
 }
