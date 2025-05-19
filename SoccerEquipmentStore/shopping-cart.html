@@ -4,46 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
 <body>
     <nav>
-        <a href="home.html">LOGO</a>
+        <a href="home.html" class="btn btn-sm btn-outline-secondary">LOGO</a>
     </nav>
-    <h1>Cart</h1>
-    <h3>Your items</h3>
-    <div class="shopping-cart-container">
-        <div class="shopping-cart-items">
-            <img src="" alt="Product IMG">
-            <div class="shopping-cart-item-info">
-                <p class="productName">Product Name</p>
-                <p class="productDesc">Product Description</p>
-            </div>
-            <div class="shopping-cart-item-price">
-                <p class="productPrice">$99.99</p>
-                Quantity
-                <br>
-                <input type="button" class="removeItemQty" value="-">
-                <input type="button" class="itemQty" value="0">
-                <input type="button" class="addItemQty" value="+">
-                <br>
-                <input type="button" class="removeItem" value="Remove">
-            </div>
-        </div>
-    </div>
+    <h1 id ='cart-title'>Cart</h1>
+    <hr>
+    <h4 id="cartItemsTitle">Your items</h4>
+    <br>
+    <div class="shopping-cart-container"></div>
+    <br>
+    <h4 id="shipping-title">Shipping Information</h4>
     <br>
     <div class="shipping-info">
-        <input type="text" placeholder="Enter shipping address">
+        <input type="text" placeholder="Enter shipping address" class="shipping-elems">
         <br><br>
-        <input type="text" placeholder="Enter Full Name">
+        <input type="text" placeholder="Enter Full Name" class="shipping-elems">
         <br><br>
-        <input type="text" placeholder="Payment Method">
+        <input type="text" placeholder="Payment Method" class="shipping-elems">
     </div>
     <br>
-    <input type="button" id="proceed-checkout" value="Proceed to Checkout">
+    <div id="checkoutContainer">
+        <input type="button" id="checkoutBtn" class="btn btn-success" value="Proceed to checkout">
+    </div>
     <br>
     <br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="js/app.js" type="module" defer></script>
 </body>
 <footer>
+    <hr>
     Kukes & Fahad &copy;
     <a href="home.html">Home</a>
     <a href="">Contact Us</a>
