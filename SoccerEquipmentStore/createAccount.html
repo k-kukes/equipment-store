@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="CSS/Styles.css">
+</head>
+<body>
+  <header>
+    <h1>Create Your Account</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <form id="registerForm">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <input type="text" id="firstName" placeholder="First Name" required>
+        <input type="text" id="lastName" placeholder="Last Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Address Information</legend>
+        <input type="text" id="street" placeholder="Street Address" required>
+        <input type="text" id="apartment" placeholder="Apartment Number">
+        <input type="text" id="postalCode" placeholder="Postal Code" required>
+        <input type="text" id="city" placeholder="City" required>
+        <input type="text" id="province" placeholder="Province" required>
+        <input type="text" id="country" placeholder="Country" required>
+      </fieldset>
+
+      <button type="submit">Register</button>
+    </form>
+  </main>
+
+  <script>
+    document.getElementById("registerForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
+
+      const firstName = document.getElementById("firstName").value.trim();
+      const lastName = document.getElementById("lastName").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
+      const phone = document.getElementById("phone").value.trim();
+
+      const street = document.getElementById("street").value.trim();
+      const apartment = document.getElementById("apartment").value.trim();
+      const postalCode = document.getElementById("postalCode").value.trim();
+      const city = document.getElementById("city").value.trim();
+      const province = document.getElementById("province").value.trim();
+      const country = document.getElementById("country").value.trim();
+
+      if (!emailRegex.test(email)) {
+        alert("Invalid email format");
+        return;
+      }
+
+      if (!passwordRegex.test(password)) {
+        alert("Password too weak. Must be at least 8 characters, include an uppercase letter, a lowercase letter, and a number.");
+        return;
+      }
+
+      if (password !== confirmPassword) {
+        alert("Passwords do not match");
+        return;
+      }
+
+      const user = {
+        firstName,
+        lastName,
+        email,
+        password,
+        phone,
+        address: {
+          street,
+          apartment,
+          postalCode,
+          city,
+          province,
+          country
+        }
+      };
+
+      localStorage.setItem("userAccount", JSON.stringify(user));
+      alert("Account created successfully!");
+      document.getElementById("registerForm").reset();
+    });
+  </script>
+</body>
+</html>
