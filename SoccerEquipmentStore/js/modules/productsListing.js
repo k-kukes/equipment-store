@@ -6,31 +6,69 @@ export async function initProductListing(){
     console.log("Product Listing Initialized");
     const uri = "data/catalog.json"
     const products = await fetchData(uri);
-    loadProducts(products);
-}
+    loadProducts(products, false);
 
-function loadProducts(products){
-    const productContainer = document.getElementById("product-card");
-    
-    products.products.forEach(product => {
-        console.log(product);
-
-        const div = document.createElement('div');
-        div.className = "card m-2"
-        div.style = "width: 12rem; height: 25rem"
-        productContainer.appendChild(div);
-
-        createNewProduct(div, 'img', product.image, "card-img-top");
-        createNewProduct(div, 'div', null, "card-body");
-        createNewProduct(cardBodyDiv, 'h5', product.itemTitle, "card-title")
-        createNewProduct(cardBodyDiv, 'p', product.itemDescription, "card-text")
-        createNewProduct(cardBodyDiv, 'p', product.unitPrice, "card-text")
-
-        div.addEventListener("click", () => {
-            localStorage.setItem('product-id',JSON.stringify(product));
-            window.location = "Product-details.html"
+    const brandsFilter = document.querySelectorAll('.brands');
+    brandsFilter.forEach(brandChk => {
+        brandChk.addEventListener('change', ()=> {
+            if (brandChk.checked) {
+                const filteredProducts = products.products.filter(product => product.brand.includes(brandChk.value));
+                loadProducts(filteredProducts, true);
+            }
         })
     });
+}
+
+function loadProducts(products, isFiltered){
+    const productContainer = document.getElementById("product-card");
+    productContainer.replaceChildren();
+    console.log(products);
+    
+
+    if (isFiltered) {
+        products.forEach(product => {
+            // console.log(product);
+
+            const div = document.createElement('div');
+            div.className = "card m-2"
+            div.style = "width: 12rem; height: 25rem"
+            productContainer.appendChild(div);
+
+            createNewProduct(div, 'img', product.image, "card-img-top");
+            createNewProduct(div, 'div', null, "card-body");
+            createNewProduct(cardBodyDiv, 'h5', product.itemTitle, "card-title")
+            createNewProduct(cardBodyDiv, 'p', product.itemDescription, "card-text")
+            createNewProduct(cardBodyDiv, 'p', product.unitPrice, "card-text")
+
+            div.addEventListener("click", () => {
+                localStorage.setItem('product-id',JSON.stringify(product));
+                window.location = "Product-details.html"
+            })
+        });
+    }
+    else {
+        products.products.forEach(product => {
+            // console.log(product);
+
+            const div = document.createElement('div');
+            div.className = "card m-2"
+            div.style = "width: 12rem; height: 25rem"
+            productContainer.appendChild(div);
+
+            createNewProduct(div, 'img', product.image, "card-img-top");
+            createNewProduct(div, 'div', null, "card-body");
+            createNewProduct(cardBodyDiv, 'h5', product.itemTitle, "card-title")
+            createNewProduct(cardBodyDiv, 'p', product.itemDescription, "card-text")
+            createNewProduct(cardBodyDiv, 'p', product.unitPrice, "card-text")
+
+            div.addEventListener("click", () => {
+                localStorage.setItem('product-id',JSON.stringify(product));
+                window.location = "Product-details.html"
+            })
+        });
+    }
+
+
 }
 
 function createNewProduct(parent, elemName, content, elemClass){
