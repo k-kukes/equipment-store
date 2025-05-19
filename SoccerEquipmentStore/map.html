@@ -22,11 +22,15 @@
     <div class="container">
         <div class="row justify-content-start">
             <!-- Column for rendering the list of places -->
-            <div class="col-2">
-                <button>Test</button>
+            <div class="col-4">
+                <form class="d-flex" role="search"></form>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="mapSearchbar">
+                <div>
+                    <ul id="locationSearchList"></ul>
+                </div>
             </div>
             <!-- Column for rendering the Leaflet map. -->
-            <div class="col-10" id="leafletMap">
+            <div class="col-7" id="leafletMap">
 
             </div>
         </div>

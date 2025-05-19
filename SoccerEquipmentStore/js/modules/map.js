@@ -19,6 +19,20 @@ export async function initLeafletMap() {
 
     // Process the locations.
    renderLocations(map, locations);
+
+   const searchBar = document.getElementById('mapSearchbar');
+   searchBar.addEventListener('keypress', ()=>{
+    const searchKeyword = searchBar.value;
+    const mapSearchList = document.getElementById('locationSearchList');
+    const listItems = mapSearchList.childNodes;
+    listItems.forEach(mapItem => {
+        if (mapItem.textContent.includes(searchKeyword)) {
+            mapItem.style.display = "block";
+        } else {
+            mapItem.style.display = "none";
+        }
+    })
+   })
 }
 
 function renderLocations(map, locations){
@@ -43,6 +57,16 @@ function renderLocations(map, locations){
         L.marker(coord, {icon : myIcon}).addTo(map)
         .bindPopup(placeInfo)
         .openPopup();
+
+        var itemDisplay = document.createElement('li');
+        itemDisplay.textContent = place.name;
+        
+        itemDisplay.addEventListener('click', ()=> {
+            map.setView(coord, 15);
+            marker.openPopup();
+        })
+
+        const mapSearchList = document.getElementById('locationSearchList');
+        mapSearchList.appendChild(itemDisplay);
     });
-   // 4)
 }
