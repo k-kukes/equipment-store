@@ -16,9 +16,35 @@
             "id": 3,
             "name": "Soccer Stores",
             "description": "Football equipment stores",
-            "markerIcon": "assets/markers/soccer.png"
-        }
+            "markerIcon": "assets/markers/soccericon1.png"
+        },
+
+            {
+             "id": 4,
+             "name": "Stadiums",
+             "description": "Professional and community soccer stadiums",
+             "markerIcon": "assets/markers/soccericon3.png"
+          },
+        {
+              "id": 5,
+              "name": "Training Centers",
+             "description": "Facilities for soccer coaching and development",
+             "markerIcon": "assets/markers/soccericon2.png"
+}
+
+
+
+
+
+
     ],
+
+
+
+
+
+
+
     "places": [
         {
             "name": "Hartenstein Park soccer field",
@@ -100,6 +126,69 @@
                 "coordinates": "45.47966098237161, -73.46451606319295"
             },
             "categoryId": 3
-        }
+        },
+
+
+{
+           "name": "Olympic Stadium",
+           "description": "Large-scale stadium used for pro soccer events",
+           "address": "4545 Pierre-de-Coubertin Ave, Montreal, QC",
+           "point": {
+           "coordinates": "45.5602,-73.5510"
+          },
+           "categoryId": 4
+},
+{
+          "name": "Saputo Stadium",
+          "description": "Home stadium for CF Montréal",
+          "address": "4750 Sherbrooke St E, Montreal, QC",
+          "point": {
+          "coordinates": "45.5636,-73.5522"
+  },
+          "categoryId": 4
+},
+{
+          "name": "West Island Soccer Park",
+          "description": "Popular local soccer field and stadium",
+          "address": "100 Soccer Ave, DDO, QC",
+          "point": {
+          "coordinates": "45.4870,-73.8321"
+  },
+          "categoryId": 4
+},
+{
+          "name": "Downtown Soccer Academy",
+          "description": "Elite training for youth and adults",
+          "address": "300 Sport St, Montreal, QC",
+          "point": {
+          "coordinates": "45.5088,-73.5610"
+  },
+          "categoryId": 5
+},
+{
+          "name": "Laval Elite Training Center",
+          "description": "Soccer development and training programs",
+          "address": "120 Training Rd, Laval, QC",
+          "point": {
+          "coordinates": "45.5834,-73.7492"
+  },
+          "categoryId": 5
+},
+{
+          "name": "South Shore Youth Academy",
+          "description": "Youth soccer training and camps",
+          "address": "88 Kickoff Blvd, Longueuil, QC",
+          "point": {
+          "coordinates": "45.5295,-73.5162"
+  },
+          "categoryId": 5
+}
+
+
+
+
+
+
+
     ]
 }
