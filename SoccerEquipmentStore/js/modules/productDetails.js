@@ -40,4 +40,5 @@ export async function initProductDetails() {
     });
 
     console.log("Product loaded:", product);
+    return product;
 }
