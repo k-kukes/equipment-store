@@ -21,22 +21,60 @@
     <form id="registerForm">
       <fieldset>
         <legend>Personal Information</legend>
-        <input type="text" id="firstName" placeholder="First Name" required>
-        <input type="text" id="lastName" placeholder="Last Name" required>
-        <input type="email" id="email" placeholder="Email" required>
-        <input type="password" id="password" placeholder="Password" required>
-        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
-        <input type="tel" id="phone" placeholder="Phone Number" required>
+
+        <div class="form-row">
+          <input type="text" id="firstName" placeholder="First Name" required>
+          <input type="text" id="lastName" placeholder="Last Name" required>
+        </div>
+
+        <div class="form-row">
+          <input type="email" id="email" placeholder="Email" required>
+          <input type="tel" id="phone" placeholder="Phone Number" required>
+        </div>
+
+        <div class="form-row">
+          <input type="password" id="password" placeholder="Password" required>
+          <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+        </div>
+
+        <div class="form-row">
+          <input type="date" id="dob" required>
+          <div>
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="male" required> Male
+            <input type="radio" name="gender" value="female"> Female
+          </div>
+        </div>
       </fieldset>
 
       <fieldset>
         <legend>Address Information</legend>
-        <input type="text" id="street" placeholder="Street Address" required>
-        <input type="text" id="apartment" placeholder="Apartment Number">
-        <input type="text" id="postalCode" placeholder="Postal Code" required>
-        <input type="text" id="city" placeholder="City" required>
-        <input type="text" id="province" placeholder="Province" required>
-        <input type="text" id="country" placeholder="Country" required>
+
+        <div class="form-row">
+          <input type="text" id="street" placeholder="Street Address" required>
+          <input type="text" id="apartment" placeholder="Apartment Number">
+        </div>
+
+        <div class="form-row">
+          <input type="text" id="postalCode" placeholder="Postal Code" required>
+          <input type="text" id="city" placeholder="City" required>
+        </div>
+
+        <div class="form-row">
+          <input type="text" id="province" placeholder="Province" required>
+          <input type="text" id="country" placeholder="Country" required>
+        </div>
+
+        <div class="form-row">
+          <label for="storeLocation">Preferred Store Location:</label>
+          <select id="storeLocation" required>
+            <option value="">--Select Store--</option>
+            <option value="laval">Laval</option>
+            <option value="westIsland">West Island</option>
+            <option value="downtown">Downtown</option>
+            <option value="quebecCity">Quebec City</option>
+          </select>
+        </div>
       </fieldset>
 
       <button type="submit">Register</button>
@@ -50,50 +88,40 @@
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
 
-      const firstName = document.getElementById("firstName").value.trim();
-      const lastName = document.getElementById("lastName").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const password = document.getElementById("password").value;
-      const confirmPassword = document.getElementById("confirmPassword").value;
-      const phone = document.getElementById("phone").value.trim();
+      const user = {
+        firstName: document.getElementById("firstName").value,
+        lastName: document.getElementById("lastName").value,
+        email: document.getElementById("email").value,
+        password: document.getElementById("password").value,
+        confirmPassword: document.getElementById("confirmPassword").value,
+        phone: document.getElementById("phone").value,
+        dob: document.getElementById("dob").value,
+        gender: document.querySelector('input[name="gender"]:checked')?.value,
+        address: {
+          street: document.getElementById("street").value,
+          apartment: document.getElementById("apartment").value,
+          postalCode: document.getElementById("postalCode").value,
+          city: document.getElementById("city").value,
+          province: document.getElementById("province").value,
+          country: document.getElementById("country").value,
+          preferredStore: document.getElementById("storeLocation").value
+        }
+      };
 
-      const street = document.getElementById("street").value.trim();
-      const apartment = document.getElementById("apartment").value.trim();
-      const postalCode = document.getElementById("postalCode").value.trim();
-      const city = document.getElementById("city").value.trim();
-      const province = document.getElementById("province").value.trim();
-      const country = document.getElementById("country").value.trim();
-
-      if (!emailRegex.test(email)) {
+      if (!emailRegex.test(user.email)) {
         alert("Invalid email format");
         return;
       }
 
-      if (!passwordRegex.test(password)) {
+      if (!passwordRegex.test(user.password)) {
         alert("Password too weak. Must be at least 8 characters, include an uppercase letter, a lowercase letter, and a number.");
         return;
       }
 
-      if (password !== confirmPassword) {
+      if (user.password !== user.confirmPassword) {
         alert("Passwords do not match");
         return;
       }
-
-      const user = {
-        firstName,
-        lastName,
-        email,
-        password,
-        phone,
-        address: {
-          street,
-          apartment,
-          postalCode,
-          city,
-          province,
-          country
-        }
-      };
 
       localStorage.setItem("userAccount", JSON.stringify(user));
       alert("Account created successfully!");
