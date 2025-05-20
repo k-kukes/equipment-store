@@ -16,6 +16,20 @@ export async function initProductListing() {
             }
         });
     });
+
+    const searchBar = document.getElementById('search-bar');
+   searchBar.addEventListener('keypress', ()=>{
+    const searchKeyword = searchBar.value;
+    const productList = document.getElementById('product-card');
+    const listItems = productList.childNodes;
+    listItems.forEach(productItem => {
+        if (productItem.textContent.toLowerCase().includes(searchKeyword.toLowerCase())) {
+            productItem.style.display = "block";
+        } else {
+            productItem.style.display = "none";
+        }
+    })
+   })
 }
 
 function loadProducts(products, isFiltered) {
