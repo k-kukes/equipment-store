@@ -9,10 +9,6 @@
     align-items: center;
 }
 
-#signInNav{
-    margin-left: 750px;
-}
-
 #pageTitle{
     text-align: center;
 }
@@ -37,7 +33,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    text-align: center;
+}
+
+#bottomHeader a{
+    height: 100%;
+    width: 12%;
 }
 
 #product-card{
@@ -127,3 +127,32 @@
     width: 20rem;
 }
 
+#welcomeSection{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#carouselExampleIndicators{
+    width: 800px;
+    margin: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.carousel-inner img {
+    height: 500px;
+}
+
+.carousel-control-prev-icon{
+    filter: invert(1);
+}
+
+.carousel-control-next-icon{
+    filter: invert(1);
+}
+
+.carousel-indicators {
+    background-color: black;
+}
