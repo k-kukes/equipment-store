@@ -91,24 +91,6 @@
     border-bottom: 1px solid black;
 }
 
-.shipping-info{
-    display: block;
-    border: 1px solid black;
-    margin-right: 5rem;
-    margin-left: 5rem;
-    padding: 2rem;
-}
-
-.shipping-elems{
-    width: 100%;
-}
-
-#shipping-title{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 #checkoutContainer{
     padding-right: 5rem;
     display: flex;

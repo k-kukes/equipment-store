@@ -5,6 +5,10 @@ export function initCart(){
     console.log(products);
 
     renderCart(products);
+    const purchaseProduct = document.getElementById('checkoutBtn');
+    purchaseProduct.addEventListener('click', ()=>{
+        alert("Purchased succesfully!")
+    })
 }
 
 function renderCart(products){
