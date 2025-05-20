@@ -135,10 +135,9 @@
 
 #carouselExampleIndicators{
     width: 800px;
-    margin: 40px;
-    border-radius: 15px;
-    overflow: hidden;
-    border: 1px solid black;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px solid black;
 }
 
 .carousel-inner img {
