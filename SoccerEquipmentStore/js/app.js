@@ -6,23 +6,7 @@ import { initProductDetails } from "./modules/productDetails.js";
 import { initCart } from "./modules/cart.js";
 import { initHome } from "./modules/home.js";
 
-window.addEventListener("DOMContentLoaded", () => {
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark") {
-    document.body.classList.add("dark-theme");
-  }
 
-  const toggleButton = document.getElementById("lightModeButton");
-  if (toggleButton) {
-    toggleButton.addEventListener("click", () => {
-      document.body.classList.toggle("dark-theme");
-      localStorage.setItem(
-        "theme",
-        document.body.classList.contains("dark-theme") ? "dark" : "light"
-      );
-    });
-  }
-});
 
 document.addEventListener('DOMContentLoaded', initApp);
 
@@ -47,11 +31,11 @@ async function initApp() {
         initTeamStandings(); 
     }
 
-    if (page === "productDetails") {
-        initProductDetails().then(product => {
-        window.loadedProduct = product;
-     });
-    }
+if (page === "productDetails") {
+    const product = await initProductDetails();
+    window.loadedProduct = product;
+}
+
     if (page === "cart") {
         initCart();
     }
