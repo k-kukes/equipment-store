@@ -142,3 +142,42 @@
 #featuredTitle{
     text-align: center;
 }
+/* Fahad */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --accent-color: #007bff;
+    --header-bg: #DAD7CD;
+    --card-bg: #f8f9fa;
+    --border-color: #ccc;
+    --font-main: 'Roboto', sans-serif;
+}
+
+body.dark-theme {
+    --bg-color: #121212;
+    --text-color: #eeeeee;
+    --accent-color: #4dabf7;
+    --header-bg: #333;
+    --card-bg: #1f1f1f;
+    --border-color: #444;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    transition: all 0.3s ease;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
